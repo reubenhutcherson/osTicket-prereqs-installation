@@ -6,9 +6,6 @@
 This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
 
 
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
 
 <h2>Environments and Technologies Used</h2>
 
@@ -22,34 +19,51 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+- Microsoft Azure
+- Virtual Machine
+- osTicket Installation Files [link](https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6)
 
 <h2>Installation Steps</h2>
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+<h3>Step 1: Connect to your Virtual Machine with Remote Desktop</h3>
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+- If you need help connecting to your virtual machine, please see my tutorial [here](https://github.com/reubenhutcherson/azurevirtualmachine)
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<h3>Step 2: Install / Enable Internet Information Services (IIS) in Windows</h3>
+
+- At the bottom left, search control panel.
+- Select uninstall a program underneath programs.
+- On the left side, select Turn Windows features on or off
+- Select Internet Information Services -> World Wide Web Services -> Application Development Features -> [X] CGI and select OK
+
+<p align="center">
+<img src="https://i.imgur.com/p74qvZv.jpg" height="80%" width="80%" alt="Azure Free Account"/> 
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+
+<h3>Step 3:  Download and install osTicket Installation Files</h3>
+
+  We will use the files shown below to install osTicket and some of the dependencies. Click here to open: [link](https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6)
+ 
+ <p align="center">
+<img src="https://i.imgur.com/vult55A.jpg" height="80%" width="80%" alt="Azure Free Account"/> 
 </p>
-<br />
+ 
+ - From the Installation Files, download and install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi)
+ - From the Installation Files, download and install the Rewrite Module (rewrite_amd64_en-US.msi)
+ - Open File Explorer -> Click on WIndows(C:) -> Create file labeled "PHP"
+ 
+  <p align="center">
+<img src="https://i.imgur.com/5qI9LME.jpg" height="80%" width="80%" alt="Azure Free Account"/> 
+</p>
+
+- From the Installation Files, download PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) and unzip the contents into C:\PHP
+- From the Installation Files, download and install VC_redist.x86.exe.
+-From the Installation Files, download and install MySQL 5.5.62 (mysql-5.5.62-win32.msi)
+  - Typical Setup -> Launch Configuration Wizard (after install) -> Standard Configuration
+  - For the password, we will go with something simple, "Password1"
+
+
+
+ 
+
