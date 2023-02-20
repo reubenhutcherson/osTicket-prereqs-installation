@@ -115,6 +115,92 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <img src="https://i.imgur.com/BMqBvVz.jpg" height="80%" width="80%" alt="Azure Free Account"/><img src="https://i.imgur.com/cqcOJQD.jpg" height="80%" width="80%" alt="Azure Free Account"/><img src="https://i.imgur.com/hRWU7r5.jpg" height="80%" width="80%" alt="Azure Free Account"/>
 </p> 
 
+Next Rename ost-sampleconfig.php to ost-config.php
+- Go to Windows (C:) -> inetpub -> wwwroot -> osTicket -> include -> ost-sampleconfig.php
+- Right click ost-sampleconfig.php to rename to ost-config.php
+
+<p align="center">
+<img src="https://i.imgur.com/m4ecirq.jpg" height="80%" width="80%" alt="Azure Free Account"/><img src="https://i.imgur.com/PWXa8le.jpg" height="80%" width="80%" alt="Azure Free Account"/>
+
+  Assign Permissions: ost-config.
+- Right click ost-config.php,
+- Open Properties -> Security -> Advanced -> Permissions
+- Select Disable inheritance -> Remove all inherited permissions from this object
+-  Afterwards, Select add -> Select a principal -> type in "everyone" -> check names-> Select OK
+- Allow everyone full control (check all boxes) -> Select apply -> OK
+  
+  <p align="center">
+<img src="https://i.imgur.com/U6THWkZ.jpg" height="80%" width="80%" alt="Azure Free Account"/><img src="https://i.imgur.com/8llk0pT.jpg" height="80%" width="80%" alt="Azure Free Account"/>
+  
+<h3>Step 7: Continue Setting up osTicket in the browser</h3>
+
+- Go back to browser and click continue
+  - Name: Helpdesk
+  - Email: whichever email you want
+  - First Name: your first name
+  - Last Name: your last name
+  - Email Address: whichever email you want (needs to be different from the Default Email)
+  - Username: user_admin 
+  - Password: Password1 
+
+
+ <p align="center">
+<img src="https://i.imgur.com/D9va323.jpg" height="80%" width="80%" alt="Azure Free Account"/><img src="https://i.imgur.com/8XN0yDt.jpg" height="80%" width="80%" alt="Azure Free Account"/>
  
+ <h3>Step 8: Download and Install HeidiSQL</h3>
+
+- Head to osTicket Installation Files [link](https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6)
+	- Download and install HeidiSQL
+- Open HeidiSQL -> Select new at the bottom left corner 
+   - User: root
+   - Password : Password
+- Select Open
+- On the left side, right click “Unamed” -> “Create New” -> “Database
+- Name it “osTicket” and select OK
+
+<p align="center">
+<img src="https://i.imgur.com/mDBWQ5k.png" height="70%" width="70%" alt="Azure Free Account"/> <img src="https://i.imgur.com/ADJYQyB.png" height="70%" width="70%" alt="Azure Free Services"/>
+</p>
+
+
+<h3>Step 9:  Go back to the browser and continue setting up osTicket by filling out the fields.</h3>
+
+
+- MySQL Database: osTicket (the one you just created in HeidiSQL)
+- MySQL Username: root
+- MySQL Password: Password1
+- Finally, click Install Now
+
+<p align="center">
+<img src="https://i.imgur.com/BoTzFpK.jpg" height="70%" width="70%" alt="Azure Free Account"/>
+
+  <h2>Congratulations! You have sucessfully installed osTicket!</h3>
+  
+  <p align="center">
+<img src="https://i.imgur.com/srWNDlL.jpg" height="70%" width="70%" alt="Azure Free Account"/>
+    
+<h3>Tips!</h3>
+
+- To create tickets as a user: http://localhost/osTicket/
+- To log in as an Admin or help desk professional: http://localhost/osTicket/scp
+ (These links can be found on the osTicket Installer page aswell)
  
+<p align="center">
+<img src="https://i.imgur.com/yUBSSss.jpg" height="70%" width="70%" alt="Azure Free Account"/> <img src="https://i.imgur.com/IYFKS87.jpg" height="70%" width="70%" alt="Azure Free Account"/>
+
+
+<h3>Step 10: Don't Forget to Cleanup!.</h3>
+
+- Go to C: -> inetpub->wwwroot->osTicket->setup
+    - Delete the contents in the setup folder
+    - Afterwards, delete the setup folder
+- Go to C:-->Inetpub-->wwwroot-->osTicket-->include
+    - Right click on ost-config.php 
+    - Select securities -> Advanced -> Click on everyone -> edit to change permissions
+	- Allow everyone to only have read and execute, then select OK -> Apply -> OK
+
+<p align="center">
+<img src="https://i.imgur.com/0HcJCIk.jpg" height="70%" width="70%" alt="Azure Free Account"/> <img src="https://i.imgur.com/SxUBRan.jpg" height="70%" width="70%" alt="Azure Free Account"/>
+
+  Click [here](https://github.com/reubenhutcherson/post-install-config) to move on to part 2 of this tutorial!
 
