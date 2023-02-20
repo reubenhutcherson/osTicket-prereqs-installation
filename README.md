@@ -52,10 +52,10 @@ This tutorial outlines the prerequisites and installation of the open-source hel
  - From the Installation Files, download and install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi)
  - From the Installation Files, download and install the Rewrite Module (rewrite_amd64_en-US.msi)
  - Open File Explorer -> Click on WIndows(C:) -> Create file labeled "PHP"
- 
   <p align="center">
-<img src="https://i.imgur.com/5qI9LME.jpg" height="80%" width="80%" alt="Azure Free Account"/> 
+<img src="https://i.imgur.com/3s7GeOf.jpg" height="80%" width="80%" alt="Azure Free Account"/> 
 </p>
+
 
 - From the Installation Files, download PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) and unzip the contents into C:\PHP
 - From the Installation Files, download and install VC_redist.x86.exe.
