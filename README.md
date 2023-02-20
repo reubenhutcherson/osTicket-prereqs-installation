@@ -202,5 +202,5 @@ Next Rename ost-sampleconfig.php to ost-config.php
 <p align="center">
 <img src="https://i.imgur.com/0HcJCIk.jpg" height="70%" width="70%" alt="Azure Free Account"/> <img src="https://i.imgur.com/SxUBRan.jpg" height="70%" width="70%" alt="Azure Free Account"/>
 
-  Click [here](https://github.com/reubenhutcherson/osTicket-post-install-config) to move on to part 2 of this tutorial!
+  Click [here](https://github.com/reubenhutcherson/osTicket-post-install-config) to move on to part 2 of this tutorial series!
 
