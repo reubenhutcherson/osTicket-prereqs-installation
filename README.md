@@ -20,7 +20,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <h2>List of Prerequisites</h2>
 
 - Microsoft Azure
-- Virtual Machine
+- Virtual Machine 
 - osTicket Installation Files [link](https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6)
 
 <h2>Installation Steps</h2>
@@ -28,6 +28,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <h3>Step 1: Connect to your Virtual Machine with Remote Desktop</h3>
 
 - If you need help connecting to your virtual machine, please see my tutorial [here](https://github.com/reubenhutcherson/azurevirtualmachine)
+	- If you intend to use your physical computer instead, then you can skip this step.
 
 <h3>Step 2: Install / Enable Internet Information Services (IIS) in Windows</h3>
 
@@ -85,7 +86,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
   <img src="https://i.imgur.com/whFqpEl.jpg" height="80%" width="80%" alt="Azure Free Account"/><img src="https://i.imgur.com/zWmaX33.jpg" height="80%" width="80%" alt="Azure Free Account"/><img src="https://i.imgur.com/SpkqDnn.jpg" height="80%" width="80%" alt="Azure Free Account"/>
 
-<h3>Step 6:Enable PHP Extensions and Assign Permissions</h3>
+<h3>Step 6: Enable PHP Extensions and Assign Permissions</h3>
   
   - Open IIS -> Restart IIS
   - Go to sites -> Default -> osTicket on the right, click “Browse *:80”
